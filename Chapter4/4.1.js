@@ -29,3 +29,24 @@ db.employees.insert(
 )
 
 db.employees.find({'family.mother': 'Chani'})
+
+db.users.insert(
+	{
+		name: 'leto',
+		email: 'leto@dune.gov',
+		addresses: [
+			{
+				street: "229 W. 43rd St",
+				city: "New York",
+				state:"NY",
+				zip:"10036"
+			},
+			{
+				street: "555 University",
+				city: "Palo Alto",
+				state:"CA",
+				zip:"94107"
+			}
+		]
+	}
+)
